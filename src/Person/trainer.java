@@ -38,14 +38,13 @@ public class trainer extends person{
     public void setClassTrainer(Class classTrainer) {
         this.classTrainer = classTrainer;
     }
+    //creamos el metodo ganar medallas
+    public void medalWin(){
+        this.medals++;
+    }
     //cremos el metodo availableligue, que nos devolvera true si su numero de medallas es mayor >= 8
     public boolean availableLigue(){
-        if (this.medals >= 8){
-            return true;
-        }
-        else {
-            return false;
-        }
+            return medals >= 8;
     }
     //creamos el tostring
 

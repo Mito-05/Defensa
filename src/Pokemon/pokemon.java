@@ -69,12 +69,7 @@ public class pokemon {
     }
     //creamos el metodo debilitado tipo boolean
     public boolean fainted(){
-        if(this.hp <= 0){
-            return true;
-        }
-        else {
-            return false;
-        }
+            return this.hp <=0;
     }
     //creamos el metodo stroke que hara que un pokemon ataque a otro restando la cantidad de ataque de pokemon1 a pokemon2
     public void stroke(pokemon pokemonr){
