@@ -6,7 +6,7 @@ public class pokemon {
     private int level;
     private int hp;
     private int atack;
-    protected enum type{NORMAL,FIRE,WATER,GHOST,GRASS,DARK}
+    public enum type{NORMAL,FIRE,WATER,GHOST,GRASS,DARK}
     protected  type Type;
     //creacion de constructores
     public pokemon(String name, int level, int hp, int atack, type Type) {
@@ -77,8 +77,8 @@ public class pokemon {
         }
     }
     //creamos el metodo stroke que hara que un pokemon ataque a otro restando la cantidad de ataque de pokemon1 a pokemon2
-    public int stroke(pokemon pokemon1, pokemon pokemon2){
-        return pokemon2.getHp()-pokemon1.getAtack();
+    public void stroke(pokemon pokemonr){
+        pokemonr.setHp(pokemonr.getHp()-this.atack);
     }
 
     @Override

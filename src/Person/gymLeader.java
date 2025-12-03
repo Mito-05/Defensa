@@ -43,6 +43,6 @@ public class gymLeader extends person{
 
     @Override
     public String toString() {
-        return "Leader: "+ this.getName() +" from city "+ this.city+ " ("+ this.getAge() +") years";
+        return "Leader: "+ this.getName() +" from city "+ this.city+ " ("+ this.getAge() +") years old";
     }
 }

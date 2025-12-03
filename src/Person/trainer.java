@@ -3,7 +3,7 @@ package Person;
 public class trainer extends person{
     //creamos los atributos
     private int medals;
-    protected enum Class{AROMALADY,BUGCATCHER,HIKER,FISHERMAN,BIRDKEEPER}
+    public enum Class{AROMALADY,BUGCATCHER,HIKER,FISHERMAN,BIRDKEEPER}
     protected Class classTrainer;
     //creamos los constructores con super para que hereden de la clase padre
 
@@ -51,6 +51,6 @@ public class trainer extends person{
 
     @Override
     public String toString() {
-        return this.classTrainer +" "+ this.getName() +" ("+ this.getAge() +") years";
+        return this.classTrainer +" "+ this.getName() +" ("+ this.getAge() +") years old";
     }
 }
